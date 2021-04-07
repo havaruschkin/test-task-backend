@@ -22,10 +22,6 @@ public class CompanyShareServiceImpl implements CompanyShareService {
         return new ArrayList<>(companyShareRepository.findAll());
     }
 
-    public CompanyShare findCompanyShareById(Long id) {
-        return companyShareRepository.findById(id).orElseThrow(IllegalArgumentException::new);
-    }
-
     public void saveCompanyShare(CompanyShare companyShare) {
         companyShareRepository.save(companyShare);
     }

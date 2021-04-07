@@ -9,5 +9,4 @@ public class TaskBackApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TaskBackApplication.class, args);
 	}
-
 }
